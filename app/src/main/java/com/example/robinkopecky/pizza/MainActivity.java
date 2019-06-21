@@ -36,23 +36,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(PizzaDetailActivity.getIntent(MainActivity.this, null));
-            }
-        });
-
-        Button language = (Button) findViewById(R.id.change_language);
-        language.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showChangeLanguageDialog();
-            }
-        });
-
-        Button but = (Button) findViewById(R.id.add_pizza);
-        but.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(AddPizzaActivity.getIntent(MainActivity.this, null));
+                startActivity(FavoriteActivity.getIntent(MainActivity.this, null));
             }
         });
     }
@@ -60,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
     private void showChangeLanguageDialog() {
         final String [] listItems = {"English", "Česky"};
         AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
-        mBuilder.setTitle("Choose Language...");
         mBuilder.setSingleChoiceItems(listItems, -1, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -122,6 +105,12 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }
+        if (id == R.id.language_settings){
+            showChangeLanguageDialog();
+        }
+        if (id == R.id.add_pizza){
+            startActivity(AddPizzaActivity.getIntent(MainActivity.this, null));
         }
 
         return super.onOptionsItemSelected(item);

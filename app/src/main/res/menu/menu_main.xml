@@ -7,4 +7,15 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/language_settings"
+        android:orderInCategory="100"
+        android:title="@string/lang_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/add_pizza"
+        android:orderInCategory="100"
+        android:title="@string/add_button"
+        app:showAsAction="never" />
 </menu>

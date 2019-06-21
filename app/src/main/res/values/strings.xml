@@ -1,9 +1,11 @@
- <resources>
-    <string name="app_name">Pizzadf</string>
+<resources>
+    <string name="app_name">Pizza</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_bag">BagActivity</string>
     <string name="title_activity_pizza_detail">PizzaDetailActivity</string>
     <string name="title_activity_splash_screen">SplashScreenActivity</string>
     <string name="title_activity_add_pizza">AddPizzaActivity</string>
-     <string name="add_button">Add Pizza</string>
- </resources>
+    <string name="add_button">Add Pizza</string>
+    <string name="lang_settings">Language Settings</string>
+    <string name="title_activity_favorite">FavoriteActivity</string>
+</resources>

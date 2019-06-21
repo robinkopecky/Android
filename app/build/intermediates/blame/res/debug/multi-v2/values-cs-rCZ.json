@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/robinkopecky/Andr/Pizza/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-cs-rCZ/values-cs-rCZ.xml",
+            "map": [
+                {
+                    "source": "/Users/robinkopecky/Andr/Pizza/app/src/main/res/values-cs-rCZ/strings.xml",
+                    "from": {
+                        "startLines": "3,8,2,9,7,4,5,6",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "98,407,55,465,341,152,205,268",
+                        "endColumns": "53,57,42,58,65,52,62,72",
+                        "endOffsets": "147,460,93,519,402,200,263,336"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,109,167,210,269,335,388,451",
+                        "endColumns": "53,57,42,58,65,52,62,72",
+                        "endOffsets": "104,162,205,264,330,383,446,519"
+                    }
+                }
+            ]
+        }
+    ]
+}

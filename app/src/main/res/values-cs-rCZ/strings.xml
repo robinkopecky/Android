@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Pizzacz</string>
+    <string name="app_name">Pizza</string>
     <string name="action_settings">Nastavení</string>
     <string name="title_activity_bag">Košík</string>
     <string name="title_activity_pizza_detail">Detail</string>
     <string name="title_activity_splash_screen">UvodniObrazovka</string>
     <string name="title_activity_add_pizza">Přidat Pizzu</string>
     <string name="add_button">Přidat Novou Pizzu</string>
+    <string name="lang_settings">Nastavení jazyku</string>
 </resources>

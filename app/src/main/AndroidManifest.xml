@@ -33,6 +33,10 @@
         <activity
             android:name=".AddPizzaActivity"
             android:label="@string/title_activity_add_pizza"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FavoriteActivity"
+            android:label="@string/title_activity_favorite"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
