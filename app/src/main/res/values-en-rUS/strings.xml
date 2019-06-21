@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pizzaen</string>
+    <string name="title_activity_add_pizza">Add Pizza</string>
+    <string name="title_activity_bag">Bag</string>
+    <string name="title_activity_pizza_detail">Detail</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="add_button">Add New Pizza</string>
+</resources>
