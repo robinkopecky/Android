@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
             pizzaViewHolder.pizzaName.setText(pizza.getName());
             pizzaViewHolder.pizzaDescription.setText(pizza.getDescription());
-            pizzaViewHolder.pizzaPrice.setText(pizza.getPrice());
+            pizzaViewHolder.pizzaPrice.setText(pizza.getPrice() + " Kč");
 
             pizzaViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

@@ -87,6 +87,8 @@ public class PizzaDAOImplementation implements IPizzaDAO {
 
 
 
+
+
     @Override
     public Pizza getPizzaByID(long id) {
 
@@ -144,9 +146,27 @@ public class PizzaDAOImplementation implements IPizzaDAO {
     @Override
     public List<Pizza> getFavoritePizza() {
 
+        List<Pizza> result = new ArrayList<>();
+
         PizzaDatabaseHelper pizzaDatabaseHelper = new PizzaDatabaseHelper(context);
         SQLiteDatabase sqLiteDatabase = pizzaDatabaseHelper.getWritableDatabase();
-        return null;
+
+
+        Cursor cursor = sqLiteDatabase.query(PizzaDatabaseScheme.TABLE_NAME, null, null,
+                null, null, null, null);
+        try {
+            if (cursor != null && cursor.getCount() > 0){
+                while (cursor.moveToNext()){
+                    if (cursorToEntity(cursor).isFavorite()){
+                    result.add(cursorToEntity(cursor));
+                    }
+                }
+            }
+        } finally {
+            cursor.close();
+            sqLiteDatabase.close();
+        }
+        return result;
     }
 
 
