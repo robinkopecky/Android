@@ -22,7 +22,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -81,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         @Override
-        public void onBindViewHolder(@NonNull final PizzaViewHolder pizzaViewHolder, int i) {
+        public void onBindViewHolder(@NonNull final PizzaViewHolder pizzaViewHolder, final int i) {
 
             final Pizza pizza = pizzaList.get(i);
 
@@ -99,6 +103,28 @@ public class MainActivity extends AppCompatActivity {
             });
 
 
+            pizzaViewHolder.pizzaLike.setChecked(pizza.isFavorite());
+
+        pizzaViewHolder.pizzaLike.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                pizza.setFavorite(isChecked);
+                pizzaDAOImplementation.updatePizza(pizza);
+                pizzaList.get(pizzaViewHolder.getAdapterPosition()).setFavorite(isChecked);
+
+                recyclerView.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        notifyItemChanged(pizzaViewHolder.getAdapterPosition());
+                    }
+                });
+
+            }
+        });
+
+
+
+
 
 
         }
@@ -113,12 +139,15 @@ public class MainActivity extends AppCompatActivity {
             public TextView pizzaName;
             public TextView pizzaDescription;
             public TextView pizzaPrice;
+            public CheckBox pizzaLike;
 
             public PizzaViewHolder(@NonNull View itemView) {
                 super(itemView);
+                pizzaLike = itemView.findViewById(R.id.fav);
                 pizzaName = itemView.findViewById(R.id.pizza_name);
                 pizzaDescription = itemView.findViewById(R.id.pizza_description);
                 pizzaPrice = itemView.findViewById(R.id.pizza_price);
+
             }
         }
     }
@@ -175,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
         config.locale = locale;
         getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
 
-        //ulozi data do shared preferences
+        //ulozi dat do shared preferences
         SharedPreferences.Editor editor = getSharedPreferences("Settings", MODE_PRIVATE).edit();
         editor.putString("My_Lang", lang);
         editor.apply();

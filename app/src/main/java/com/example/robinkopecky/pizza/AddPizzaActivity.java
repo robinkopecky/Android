@@ -78,6 +78,7 @@ public class AddPizzaActivity extends AppCompatActivity {
                 pizza.setName(name);
                 pizza.setDescription(description);
                 pizza.setPrice(price);
+                pizza.setFavorite(true);
                 pizzaDAOImplementation.insertPizza(pizza);
 
 

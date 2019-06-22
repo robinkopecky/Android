@@ -120,6 +120,25 @@ public class PizzaDAOImplementation implements IPizzaDAO {
         PizzaDatabaseHelper pizzaDatabaseHelper = new PizzaDatabaseHelper(context);
         SQLiteDatabase sqLiteDatabase = pizzaDatabaseHelper.getWritableDatabase();
 
+        try {
+            ContentValues contentValues = new ContentValues();
+            if (favorite){
+                contentValues.put(PizzaDatabaseScheme._FAVORITE, 1);
+            } else {
+                contentValues.put(PizzaDatabaseScheme._FAVORITE, 0);
+            }
+
+            int numberOfRowsUpdated
+                    = sqLiteDatabase
+                    .update(PizzaDatabaseScheme.TABLE_NAME,
+                            contentValues,
+                            PizzaDatabaseScheme._ID + "=? ",
+                            new String[]{String.valueOf(id)});
+
+        } finally {
+            sqLiteDatabase.close();
+        }
+
     }
 
     @Override
@@ -139,6 +158,11 @@ public class PizzaDAOImplementation implements IPizzaDAO {
         contentValues.put(PizzaDatabaseScheme._DESCRIPTION, pizza.getDescription());
         contentValues.put(PizzaDatabaseScheme._PRICE, pizza.getPrice());
         contentValues.put(PizzaDatabaseScheme._IMAGE, pizza.getImage());
+        if (pizza.isFavorite()) {
+            contentValues.put(PizzaDatabaseScheme._FAVORITE,1);
+        } else {
+            contentValues.put(PizzaDatabaseScheme._FAVORITE,0);
+        }
 
         return contentValues;
 
@@ -152,6 +176,12 @@ public class PizzaDAOImplementation implements IPizzaDAO {
         pizza.setDescription(cursor.getString(cursor.getColumnIndex(PizzaDatabaseScheme._DESCRIPTION)));
         pizza.setPrice(cursor.getString(cursor.getColumnIndex(PizzaDatabaseScheme._PRICE)));
         pizza.setImage(cursor.getString(cursor.getColumnIndex(PizzaDatabaseScheme._IMAGE)));
+
+        int favorie = cursor.getInt(cursor.getColumnIndex(PizzaDatabaseScheme._FAVORITE));
+
+        if (favorie == 1){
+            pizza.setFavorite(true);
+        }
 
         return pizza;
 
