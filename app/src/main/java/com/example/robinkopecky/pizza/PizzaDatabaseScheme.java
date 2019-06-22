@@ -18,7 +18,7 @@ public interface PizzaDatabaseScheme extends BaseColumns {
             + _NAME + " TEXT,"
             + _DESCRIPTION + " TEXT,"
             + _FAVORITE + " INTEGER,"
-            + _PRICE + " INTEGER"
+            + _PRICE + " TEXT,"
             + _IMAGE + " TEXT"
             + ")";
 

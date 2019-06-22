@@ -17,6 +17,7 @@ public class PizzaDAOImplementation implements IPizzaDAO {
 
     @Override
     public void insertPizza(Pizza pizza) {
+
         PizzaDatabaseHelper pizzaDatabaseHelper = new PizzaDatabaseHelper(context);
         SQLiteDatabase sqLiteDatabase = pizzaDatabaseHelper.getWritableDatabase();
 
@@ -94,7 +95,7 @@ public class PizzaDAOImplementation implements IPizzaDAO {
 
         PizzaDatabaseHelper pizzaDatabaseHelper = new PizzaDatabaseHelper(context);
         SQLiteDatabase sqLiteDatabase = pizzaDatabaseHelper.getWritableDatabase();
-
+//todo
         Cursor cursor = sqLiteDatabase.query(PizzaDatabaseScheme.TABLE_NAME, null, PizzaDatabaseScheme._ID + "=? ",
                 new String[]{String.valueOf(id)}, null, null, null);
 
@@ -134,6 +135,7 @@ public class PizzaDAOImplementation implements IPizzaDAO {
     private ContentValues entityToContentValues(Pizza pizza) {
         ContentValues contentValues = new ContentValues();
         contentValues.put(PizzaDatabaseScheme._NAME, pizza.getName());
+        System.out.print(pizza.getName());
         contentValues.put(PizzaDatabaseScheme._DESCRIPTION, pizza.getDescription());
         contentValues.put(PizzaDatabaseScheme._PRICE, pizza.getPrice());
         contentValues.put(PizzaDatabaseScheme._IMAGE, pizza.getImage());

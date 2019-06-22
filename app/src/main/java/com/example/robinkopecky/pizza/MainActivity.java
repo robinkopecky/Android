@@ -8,19 +8,34 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
+
+    private RecyclerView recyclerView;
+    private PizzaDAOImplementation pizzaDAOImplementation;
+
+    private List<Pizza> pizzaList = new ArrayList<>();
+
+    private  PizzaAdapter pizzaAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +54,94 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(FavoriteActivity.getIntent(MainActivity.this, null));
             }
         });
+
+        recyclerView = findViewById(R.id.recycler_view);
+        pizzaDAOImplementation = new PizzaDAOImplementation(this);
+
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+
+    public class PizzaAdapter extends RecyclerView.Adapter<PizzaAdapter.PizzaViewHolder>{
+
+        @NonNull
+        @Override
+        public PizzaViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+            View itemView = LayoutInflater.from(MainActivity.this).inflate(R.layout.row_pizza_list, viewGroup,false);
+            return new PizzaViewHolder(itemView);
+        }
+
+
+
+        @Override
+        public void onBindViewHolder(@NonNull final PizzaViewHolder pizzaViewHolder, int i) {
+
+            final Pizza pizza = pizzaList.get(i);
+
+            pizzaViewHolder.pizzaName.setText(pizza.getName());
+            pizzaViewHolder.pizzaDescription.setText(pizza.getDescription());
+            pizzaViewHolder.pizzaPrice.setText(pizza.getPrice());
+
+            pizzaViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //int truePosition = pizzaViewHolder.getAdapterPosition();
+                    startActivity(PizzaDetailActivity.getIntent(MainActivity.this, null));
+
+                }
+            });
+
+
+
+
+        }
+
+        @Override
+        public int getItemCount() {
+            return pizzaList.size();
+        }
+
+        public class PizzaViewHolder extends RecyclerView.ViewHolder{
+
+            public TextView pizzaName;
+            public TextView pizzaDescription;
+            public TextView pizzaPrice;
+
+            public PizzaViewHolder(@NonNull View itemView) {
+                super(itemView);
+                pizzaName = itemView.findViewById(R.id.pizza_name);
+                pizzaDescription = itemView.findViewById(R.id.pizza_description);
+                pizzaPrice = itemView.findViewById(R.id.pizza_price);
+            }
+        }
+    }
+
+    private void setList(){
+        pizzaList.clear();
+        pizzaList.addAll(pizzaDAOImplementation.getAllPizza());
+
+        if (pizzaAdapter == null){
+            pizzaAdapter = new PizzaAdapter();
+            RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+            recyclerView.setLayoutManager(layoutManager);
+            recyclerView.setAdapter(pizzaAdapter);
+
+        } else {
+            pizzaAdapter.notifyDataSetChanged();
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        setList();
     }
 
     private void showChangeLanguageDialog() {
@@ -88,12 +191,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

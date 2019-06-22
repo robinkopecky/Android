@@ -9,9 +9,11 @@ public interface IPizzaDAO {
     void deletePizza(Pizza pizza);
 
     List<Pizza> getAllPizza();
+
     Pizza getPizzaByID(long id);
 
     void markAsFavorite(long id, boolean favorite);
+
     List<Pizza> getFavoritePizza();
 
 }

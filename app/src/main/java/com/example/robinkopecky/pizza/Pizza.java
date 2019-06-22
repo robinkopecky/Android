@@ -51,7 +51,7 @@ public class Pizza {
         this.description = description;
     }
 
-    public String  getPrice() {
+    public String getPrice() {
         return price;
     }
 

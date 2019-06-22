@@ -8,4 +8,9 @@
     <string name="title_activity_splash_screen">SplashScreen</string>
     <string name="add_button">Add New Pizza</string>
     <string name="lang_settings">Language Settings</string>
+    <string name="save">S</string>
+    <string name="pizzaName">Pizza name</string>
+    <string name="pizzaDescription">Pizza description</string>
+    <string name="pizzaPrice">Price</string>
+    <string name="buy">Buy</string>
 </resources>

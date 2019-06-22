@@ -8,21 +8,22 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class PizzaDatabaseHelper extends SQLiteOpenHelper {
 
     private static final String NAME = "pizza_db";
-    public static final int VERSION = 1;
+    public static final int VERSION = 4;
 
     public PizzaDatabaseHelper(Context context) {
         super(context, NAME, null, VERSION);
     }
+
     @Override
-    public void onCreate(SQLiteDatabase db) {
-        db.execSQL(PizzaDatabaseScheme.CREATE_TABLE);
+    public void onCreate(SQLiteDatabase sqLiteDatabase) {
+        sqLiteDatabase.execSQL(PizzaDatabaseScheme.CREATE_TABLE);
 
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL(PizzaDatabaseScheme.DROP_TABLE);
-        onCreate(db);
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {
+        sqLiteDatabase.execSQL(PizzaDatabaseScheme.DROP_TABLE);
+        onCreate(sqLiteDatabase);
 
     }
 }

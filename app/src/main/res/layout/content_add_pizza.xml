@@ -8,9 +8,29 @@
     tools:context=".AddPizzaActivity"
     tools:showIn="@layout/activity_add_pizza">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/add_button"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/pizza_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pizzaName"/>
+
+        <EditText
+            android:id="@+id/pizza_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pizzaDescription"/>
+
+        <EditText
+            android:id="@+id/pizza_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pizzaPrice"/>
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

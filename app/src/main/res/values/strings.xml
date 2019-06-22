@@ -8,4 +8,9 @@
     <string name="add_button">Add Pizza</string>
     <string name="lang_settings">Language Settings</string>
     <string name="title_activity_favorite">FavoriteActivity</string>
+    <string name="save">save</string>
+    <string name="pizzaName">Pizza name</string>
+    <string name="pizzaDescription">Pizza description</string>
+    <string name="pizzaPrice">Price</string>
+    <string name="buy">Buy</string>
 </resources>
