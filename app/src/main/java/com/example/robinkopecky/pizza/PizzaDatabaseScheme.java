@@ -25,4 +25,6 @@ public interface PizzaDatabaseScheme extends BaseColumns {
     String DROP_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
 
 
+
+
 }

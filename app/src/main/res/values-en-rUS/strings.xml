@@ -20,4 +20,7 @@
     <string name="noDescription">the description is not given</string>
     <string name="noPrice">the description is not given</string>
     <string name="adding">Pizza added to bag</string>
+    <string name="remove">Remove</string>
+    <string name="sent">Send order</string>
+    <string name="ordering">You successfully send the order</string>
 </resources>

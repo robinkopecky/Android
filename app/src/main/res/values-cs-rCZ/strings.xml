@@ -20,4 +20,7 @@
     <string name="noDescription">popis není uveden</string>
     <string name="noPrice">cena není uvedena</string>
     <string name="adding">Do košíku byla přidána pizza</string>
+    <string name="remove">Odstranit</string>
+    <string name="sent">Odeslat objednávku</string>
+    <string name="ordering">Úspěšně jste odeslal objednávku</string>
 </resources>

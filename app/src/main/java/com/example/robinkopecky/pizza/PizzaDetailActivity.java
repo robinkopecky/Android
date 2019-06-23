@@ -6,23 +6,29 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class PizzaDetailActivity extends AppCompatActivity {
 
+    private Pizza addPizza;
+
     private long id;
     private TextView pizzaName;
     private TextView pizzaDescription;
     private TextView pizzaPrice;
     private CheckBox pizzaLike;
+    private Button pizzaBuy;
     private ImageView pizzaImage;
     private List<Pizza> pizzaList = new ArrayList<>();
 
@@ -54,12 +60,13 @@ public class PizzaDetailActivity extends AppCompatActivity {
             }
         });
 
+
         id = getIntent().getLongExtra(IntentConstants.ID,-1);
         pizzaName = findViewById(R.id.pizza_name_detail);
         pizzaDescription = findViewById(R.id.pizza_description_detail);
         pizzaPrice = findViewById(R.id.pizza_price_detail);
         pizzaLike = findViewById(R.id.fav_detail);
-
+        pizzaBuy = findViewById(R.id.buy_detail);
 
         pizzaDAOImplementation = new PizzaDAOImplementation(this);
         pizzaList = pizzaDAOImplementation.getAllPizza();
@@ -85,6 +92,7 @@ public class PizzaDetailActivity extends AppCompatActivity {
         }
 
 
+
     }
 
     @Override
@@ -99,6 +107,25 @@ public class PizzaDetailActivity extends AppCompatActivity {
 
             }
         });
+
+        pizzaBuy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                addPizza = new Pizza();
+                addPizza.setName(pizza.getName());
+                addPizza.setDescription(pizza.getDescription());
+                addPizza.setPrice(pizza.getPrice());
+
+
+                pizzaDAOImplementation.insertBag(addPizza);
+                Toast toast = Toast.makeText(PizzaDetailActivity.this,getResources().getString(R.string.adding),Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL,0,0);
+                toast.show();
+            }
+        });
+
+
     }
 
     public static Intent getIntent(MainActivity context, Long id) {

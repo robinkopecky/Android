@@ -1,8 +1,6 @@
 package com.example.robinkopecky.pizza;
 
-import android.app.ActionBar;
 import android.app.Activity;
-import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,7 +8,6 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -25,15 +22,20 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
+
+
+    public static List<Pizza> bagList = new ArrayList<>();
+
+
+    private Pizza addPizza;
+
 
     private RecyclerView recyclerView;
     private PizzaDAOImplementation pizzaDAOImplementation;
@@ -73,6 +75,18 @@ public class MainActivity extends AppCompatActivity {
         pizzaDAOImplementation = new PizzaDAOImplementation(this);
 
 
+
+
+
+    }
+
+    public static Intent getIntent(BagActivity context, Long id) {
+        Intent intent = new Intent(context,
+                MainActivity.class);
+        if (id != null){
+            intent.putExtra(IntentConstants.ID, id);
+        }
+        return intent;
     }
 
     @Override
@@ -104,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
             pizzaViewHolder.pizzaPrice.setText(pizza.getPrice() + " Kč");
 
 
+
             pizzaViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -117,7 +132,14 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
 
-                    pizzaDAOImplementation.deletePizza(pizzaList.get(i));
+                    addPizza = new Pizza();
+                    addPizza.setName(pizza.getName());
+                    addPizza.setDescription(pizza.getDescription());
+                    addPizza.setPrice(pizza.getPrice());
+
+
+                    pizzaDAOImplementation.insertBag(addPizza);
+
                     Toast toast = Toast.makeText(MainActivity.this,getResources().getString(R.string.adding),Toast.LENGTH_SHORT);
                     toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL,0,0);
                     toast.show();

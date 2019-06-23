@@ -7,6 +7,11 @@ public interface IPizzaDAO {
     void insertPizza(Pizza pizza);
     void updatePizza(Pizza pizza);
     void deletePizza(Pizza pizza);
+    void insertBag(Pizza pizza);
+    void deleteBag(Pizza pizza);
+    void emptyBag();
+
+    List<Pizza> getPizzaBag();
 
     List<Pizza> getAllPizza();
 

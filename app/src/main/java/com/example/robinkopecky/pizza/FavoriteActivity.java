@@ -22,12 +22,14 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class FavoriteActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private PizzaDAOImplementation pizzaDAOImplementation;
 
     private List<Pizza> pizzaList = new ArrayList<>();
+    private Pizza addPizza;
 
     private PizzaAdapter pizzaAdapter;
 
@@ -48,6 +50,7 @@ public class FavoriteActivity extends AppCompatActivity {
             }
         });
 
+
         FloatingActionButton bag = (FloatingActionButton) findViewById(R.id.bag);
         bag.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +58,7 @@ public class FavoriteActivity extends AppCompatActivity {
                 startActivity(BagActivity.getIntent(FavoriteActivity.this, null));
             }
         });
+
 
 
         recyclerView = findViewById(R.id.recycler_view);
@@ -93,6 +97,17 @@ public class FavoriteActivity extends AppCompatActivity {
             pizzaViewHolder.buyButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
+
+                    addPizza = new Pizza();
+                    addPizza.setName(pizza.getName());
+                    addPizza.setDescription(pizza.getDescription());
+                    addPizza.setPrice(pizza.getPrice());
+
+
+                    pizzaDAOImplementation.insertBag(addPizza);
+
+
                     Toast toast = Toast.makeText(FavoriteActivity.this,getResources().getString(R.string.adding),Toast.LENGTH_SHORT);
                     toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL,0,0);
                     toast.show();

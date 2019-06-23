@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Nastavení</string>
+    <string name="add_button">Přidat Novou Pizzu</string>
+    <string name="adding">Do košíku byla přidána pizza</string>
+    <string name="app_name">Pizza</string>
+    <string name="buy">Koupit</string>
+    <string name="lang_settings">Nastavení jazyku</string>
+    <string name="newPizza">Nová pizza</string>
+    <string name="noDescription">popis není uveden</string>
+    <string name="noPrice">cena není uvedena</string>
+    <string name="ordering">Úspěšně jste odeslal objednávku</string>
+    <string name="pizzaDescription">Popis pizzy</string>
+    <string name="pizzaName">Jméno pizzy</string>
+    <string name="pizzaPrice">Cena</string>
+    <string name="remove">Odstranit</string>
+    <string name="save">Ulož</string>
+    <string name="sent">Odeslat objednávku</string>
+    <string name="title_activity_add_pizza">Přidat Pizzu</string>
+    <string name="title_activity_bag">Košík</string>
+    <string name="title_activity_favorite">Vaše oblíbené pizzy</string>
+    <string name="title_activity_pizza_detail">Detail</string>
+    <string name="title_activity_splash_screen">UvodniObrazovka</string>
+    <string name="vers">Verze</string>
+    <string name="version">Aktuální verze je</string>
+</resources>
