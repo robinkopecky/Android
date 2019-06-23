@@ -8,9 +8,104 @@
     tools:context=".PizzaDetailActivity"
     tools:showIn="@layout/activity_pizza_detail">
 
-    <ImageView
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/pizza_image_detail"
+        android:layout_width="293dp"
+
+        android:layout_height="304dp"
+
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="160dp"
+        android:maxWidth="160dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/pizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <CheckBox
+        android:id="@+id/fav_detail"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+
+        android:layout_marginLeft="44dp"
+
+        android:layout_marginTop="320dp"
+
+
+        android:button="@drawable/checkbox_selector"
+        android:textSize="36dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pizza_name_detail"
+        android:layout_width="251dp"
+        android:layout_height="34dp"
+
+
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fav_detail"
+        app:layout_constraintTop_toBottomOf="@+id/pizza_image_detail" />
+
+    <TextView
+        android:id="@+id/pizza_description_detail"
+        android:layout_width="291dp"
+        android:layout_height="97dp"
+        android:layout_marginBottom="8dp"
+
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:maxLines="4"
+        app:layout_constraintBottom_toTopOf="@+id/buy_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fav_detail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/pizza_price_detail"
+        android:layout_width="72dp"
+        android:layout_height="24dp"
+
+        android:layout_marginBottom="84dp"
+        android:layout_marginStart="168dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buy_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"/>
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="140dp"
+        android:background="@drawable/buttonshape"
+        android:shadowRadius="100"
+        android:text="@string/buy"
+        android:textSize="22dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
 
 </android.support.constraint.ConstraintLayout>

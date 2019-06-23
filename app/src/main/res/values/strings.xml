@@ -13,4 +13,10 @@
     <string name="pizzaDescription">Pizza description</string>
     <string name="pizzaPrice">Price</string>
     <string name="buy">Buy</string>
+    <string name="version">Actual version is</string>
+    <string name="vers">Version</string>
+    <string name="newPizza">New Pizza</string>
+    <string name="noDescription">the description is not given</string>
+    <string name="noPrice">the price is not given</string>
+    <string name="adding">Pizza added to bag</string>
 </resources>

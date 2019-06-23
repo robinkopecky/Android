@@ -1,5 +1,6 @@
 package com.example.robinkopecky.pizza;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -21,9 +22,40 @@ public class BagActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                        .setAction("Actionbag", null).show();
             }
         });
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+    }
+    public static Intent getIntent(MainActivity context, Long id) {
+        Intent intent = new Intent(context,
+                BagActivity.class);
+        if (id != null){
+            intent.putExtra(IntentConstants.ID, id);
+        }
+        return intent;
+    }
+    public static Intent getIntent(FavoriteActivity context, Long id) {
+        Intent intent = new Intent(context,
+                BagActivity.class);
+        if (id != null){
+            intent.putExtra(IntentConstants.ID, id);
+        }
+        return intent;
+    }
+    public static Intent getIntent(PizzaDetailActivity context, Long id) {
+        Intent intent = new Intent(context,
+                BagActivity.class);
+        if (id != null){
+            intent.putExtra(IntentConstants.ID, id);
+        }
+        return intent;
     }
 
 }

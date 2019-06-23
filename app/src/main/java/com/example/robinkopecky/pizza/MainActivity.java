@@ -16,6 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Menu;
@@ -59,6 +60,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        FloatingActionButton bag = (FloatingActionButton) findViewById(R.id.bag);
+        bag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(BagActivity.getIntent(MainActivity.this, null));
+            }
+        });
+
         recyclerView = findViewById(R.id.recycler_view);
         pizzaDAOImplementation = new PizzaDAOImplementation(this);
 
@@ -93,12 +103,24 @@ public class MainActivity extends AppCompatActivity {
             pizzaViewHolder.pizzaDescription.setText(pizza.getDescription());
             pizzaViewHolder.pizzaPrice.setText(pizza.getPrice() + " Kč");
 
+
             pizzaViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //int truePosition = pizzaViewHolder.getAdapterPosition();
-                    startActivity(PizzaDetailActivity.getIntent(MainActivity.this, null));
+                    int truePosition = pizzaViewHolder.getAdapterPosition();
+                    startActivity(PizzaDetailActivity.getIntent(MainActivity.this, pizzaList.get(truePosition).getId()));
 
+                }
+            });
+
+            pizzaViewHolder.buyButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    pizzaDAOImplementation.deletePizza(pizzaList.get(i));
+                    Toast toast = Toast.makeText(MainActivity.this,getResources().getString(R.string.adding),Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL,0,0);
+                    toast.show();
                 }
             });
 
@@ -110,6 +132,8 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 pizza.setFavorite(isChecked);
                 pizzaDAOImplementation.updatePizza(pizza);
+
+                /*
                 pizzaList.get(pizzaViewHolder.getAdapterPosition()).setFavorite(isChecked);
 
                 recyclerView.post(new Runnable() {
@@ -117,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
                         notifyItemChanged(pizzaViewHolder.getAdapterPosition());
                     }
-                });
+                });*/
 
             }
         });
@@ -140,6 +164,7 @@ public class MainActivity extends AppCompatActivity {
             public TextView pizzaDescription;
             public TextView pizzaPrice;
             public CheckBox pizzaLike;
+            public Button buyButton;
 
             public PizzaViewHolder(@NonNull View itemView) {
                 super(itemView);
@@ -147,6 +172,7 @@ public class MainActivity extends AppCompatActivity {
                 pizzaName = itemView.findViewById(R.id.pizza_name);
                 pizzaDescription = itemView.findViewById(R.id.pizza_description);
                 pizzaPrice = itemView.findViewById(R.id.pizza_price);
+                buyButton = itemView.findViewById(R.id.buy);
 
             }
         }
@@ -197,6 +223,14 @@ public class MainActivity extends AppCompatActivity {
         mDialog.show();
     }
 
+    private void showVersion() {
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
+        mBuilder.setMessage(getResources().getString(R.string.version) + " beta 1.0");
+
+        AlertDialog mDialog = mBuilder.create();
+        mDialog.show();
+    }
+
     private void setLocale(String lang) {
         Locale locale = new Locale(lang);
         Locale.setDefault(locale);
@@ -230,7 +264,7 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            showVersion();
         }
         if (id == R.id.language_settings){
             showChangeLanguageDialog();

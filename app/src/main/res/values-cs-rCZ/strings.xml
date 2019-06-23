@@ -13,4 +13,11 @@
     <string name="pizzaDescription">Popis pizzy</string>
     <string name="pizzaPrice">Cena</string>
     <string name="buy">Koupit</string>
+    <string name="version">Aktuální verze je</string>
+    <string name="vers">Verze</string>
+    <string name="newPizza">Nová pizza</string>
+    <string name="title_activity_favorite">Vaše oblíbené pizzy</string>
+    <string name="noDescription">popis není uveden</string>
+    <string name="noPrice">cena není uvedena</string>
+    <string name="adding">Do košíku byla přidána pizza</string>
 </resources>

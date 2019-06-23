@@ -9,12 +9,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,6 +38,7 @@ public class FavoriteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_favorite);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(getResources().getString(R.string.title_activity_favorite));
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -43,6 +47,15 @@ public class FavoriteActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        FloatingActionButton bag = (FloatingActionButton) findViewById(R.id.bag);
+        bag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(BagActivity.getIntent(FavoriteActivity.this, null));
+            }
+        });
+
 
         recyclerView = findViewById(R.id.recycler_view);
         pizzaDAOImplementation = new PizzaDAOImplementation(this);
@@ -72,9 +85,17 @@ public class FavoriteActivity extends AppCompatActivity {
             pizzaViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //int truePosition = pizzaViewHolder.getAdapterPosition();
-                    //startActivity(PizzaDetailActivity.getIntent(FavoriteActivity.this,null);
+                    int truePosition = pizzaViewHolder.getAdapterPosition();
+                    startActivity(PizzaDetailActivity.getIntent(FavoriteActivity.this, pizzaList.get(truePosition).getId()));
 
+                }
+            });
+            pizzaViewHolder.buyButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast toast = Toast.makeText(FavoriteActivity.this,getResources().getString(R.string.adding),Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL,0,0);
+                    toast.show();
                 }
             });
 
@@ -86,6 +107,7 @@ public class FavoriteActivity extends AppCompatActivity {
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                     pizza.setFavorite(isChecked);
                     pizzaDAOImplementation.updatePizza(pizza);
+                    /*
                     pizzaList.get(pizzaViewHolder.getAdapterPosition()).setFavorite(isChecked);
 
                     recyclerView.post(new Runnable() {
@@ -93,7 +115,7 @@ public class FavoriteActivity extends AppCompatActivity {
                         public void run() {
                             notifyItemChanged(pizzaViewHolder.getAdapterPosition());
                         }
-                    });
+                    });*/
 
                 }
             });
@@ -116,9 +138,11 @@ public class FavoriteActivity extends AppCompatActivity {
             public TextView pizzaDescription;
             public TextView pizzaPrice;
             public CheckBox pizzaLike;
+            public Button buyButton;
 
             public PizzaViewHolder(@NonNull View itemView) {
                 super(itemView);
+                buyButton = itemView.findViewById(R.id.buy);
                 pizzaLike = itemView.findViewById(R.id.fav);
                 pizzaName = itemView.findViewById(R.id.pizza_name);
                 pizzaDescription = itemView.findViewById(R.id.pizza_description);

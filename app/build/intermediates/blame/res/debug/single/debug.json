@@ -612,6 +612,10 @@
         "source": "/Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/78256525e6db230efb4825679d27229d/res/color-v23/abc_tint_seek_thumb.xml"
     },
     {
+        "merged": "/Users/robinkopecky/Andr/Pizza/app/build/intermediates/res/merged/debug/drawable_buttonshape.xml.flat",
+        "source": "/Users/robinkopecky/Andr/Pizza/app/src/main/res/drawable/buttonshape.xml"
+    },
+    {
         "merged": "/Users/robinkopecky/Andr/Pizza/app/build/intermediates/res/merged/debug/layout_mtrl_layout_snackbar_include.xml.flat",
         "source": "/Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/720d31a53b62ae87702f8e86f1be25b2/res/layout/mtrl_layout_snackbar_include.xml"
     },
@@ -1010,6 +1014,10 @@
     {
         "merged": "/Users/robinkopecky/Andr/Pizza/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "/Users/robinkopecky/Andr/Pizza/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/robinkopecky/Andr/Pizza/app/build/intermediates/res/merged/debug/drawable_ic_shopping_cart_black_24dp.xml.flat",
+        "source": "/Users/robinkopecky/Andr/Pizza/app/src/main/res/drawable/ic_shopping_cart_black_24dp.xml"
     },
     {
         "merged": "/Users/robinkopecky/Andr/Pizza/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_36dp.png.flat",
