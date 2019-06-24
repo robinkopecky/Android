@@ -1,4 +1,4 @@
-#Mon Jun 24 00:00:45 CEST 2019
+#Mon Jun 24 02:34:19 CEST 2019
 base.0=/Users/robinkopecky/Andr/Pizza/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

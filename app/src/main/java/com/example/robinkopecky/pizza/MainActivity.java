@@ -1,6 +1,7 @@
 package com.example.robinkopecky.pizza;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -28,6 +29,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -47,6 +51,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
+                .setDefaultFontPath("fonts/Italianno-Regular.ttf")
+                .setFontAttrId(R.attr.fontPath)
+                .build());
+
         loadLocale();
         setContentView(R.layout.activity_main);
 
@@ -77,8 +86,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
     }
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+
 
     public static Intent getIntent(BagActivity context, Long id) {
         Intent intent = new Intent(context,
@@ -252,6 +265,14 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog mDialog = mBuilder.create();
         mDialog.show();
     }
+    private void showHelp() {
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
+        mBuilder.setMessage(getResources().getString(R.string.helpText));
+
+        AlertDialog mDialog = mBuilder.create();
+        mDialog.show();
+
+    }
 
     private void setLocale(String lang) {
         Locale locale = new Locale(lang);
@@ -294,9 +315,14 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.add_pizza){
             startActivity(AddPizzaActivity.getIntent(MainActivity.this, null));
         }
+        if (id == R.id.help){
+            showHelp();
+        }
 
         return super.onOptionsItemSelected(item);
     }
+
+
 
 
 }

@@ -28,15 +28,15 @@ public final class R {
         public static final int cardview_shadow_start_color = 0x7f050029;
     }
     public static final class dimen {
-        public static final int cardview_compat_inset_shadow = 0x7f06004b;
-        public static final int cardview_default_elevation = 0x7f06004c;
-        public static final int cardview_default_radius = 0x7f06004d;
+        public static final int cardview_compat_inset_shadow = 0x7f060054;
+        public static final int cardview_default_elevation = 0x7f060055;
+        public static final int cardview_default_radius = 0x7f060056;
     }
     public static final class style {
-        public static final int Base_CardView = 0x7f0f000f;
-        public static final int CardView = 0x7f0f00c6;
-        public static final int CardView_Dark = 0x7f0f00c7;
-        public static final int CardView_Light = 0x7f0f00c8;
+        public static final int Base_CardView = 0x7f0f0015;
+        public static final int CardView = 0x7f0f00cc;
+        public static final int CardView_Dark = 0x7f0f00cd;
+        public static final int CardView_Light = 0x7f0f00ce;
     }
     public static final class styleable {
         public static final int[] CardView = { 0x0101013f, 0x01010140, 0x7f03005a, 0x7f03005b, 0x7f03005c, 0x7f03005d, 0x7f03005e, 0x7f03005f, 0x7f03009d, 0x7f03009e, 0x7f03009f, 0x7f0300a0, 0x7f0300a1 };

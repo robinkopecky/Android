@@ -23,4 +23,7 @@
     <string name="remove">Remove</string>
     <string name="sent">Send order</string>
     <string name="ordering">You successfully send the order</string>
+    <string name="help">Help</string>
+    <string name="helpText">This app is for ordering pizza. You can determine which pizza are your favorites. You can cancel this option later if your pizza stops tasting. After clicking on the pizza, you can check out more information. Your basket is always at hand.</string>
+    <string name="menu_title">Main dish</string>
 </resources>

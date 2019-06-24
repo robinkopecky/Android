@@ -4,17 +4,18 @@ ADDED from /Users/robinkopecky/Andr/Pizza/app/src/main/AndroidManifest.xml:2:1-4
 INJECTED from /Users/robinkopecky/Andr/Pizza/app/src/main/AndroidManifest.xml:2:1-43:12
 INJECTED from /Users/robinkopecky/Andr/Pizza/app/src/main/AndroidManifest.xml:2:1-43:12
 INJECTED from /Users/robinkopecky/Andr/Pizza/app/src/main/AndroidManifest.xml:2:1-43:12
+MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/13ff07acdc361eea1da4b4c3b461e4b6/AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:design:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/720d31a53b62ae87702f8e86f1be25b2/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/85032270f42c085cca487b14938bb3c7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/b643422f06846e344166427f7f58e97b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.AppIntro:AppIntro:4.2.3] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/AppIntro-4.2.3.aar/22c59a15ad32dc1dddd32ce64dacd059/AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/78256525e6db230efb4825679d27229d/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/ba6f41a19084b11c70e34984e30f2387/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/4a82744ce8f9b614c96ff862a1bbed9a/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/537ac71d6845d6d3b1ffff434b2dee90/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/85032270f42c085cca487b14938bb3c7/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/10ba8bd09c7fc797f26a27805579f2e3/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/086e3d3940d4f2c2807a2a0ba09c43e0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b09e53cc40afe4568f4a47d5294ea1f7/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:transition:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/e1600f12e5a7a0fb5ce887e2b6345a11/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/62cbce5287ca9ddfbf9959c05fb6a9e0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:viewpager:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/c389f00a529fbbf7f543e48e3a7b8acb/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/bb504574d6ca53f8b31703cf630c1009/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:drawerlayout:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/17d272b1259badf2b693262b028dbdfa/AndroidManifest.xml:17:1-22:12
@@ -22,16 +23,17 @@ MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/robinkopecky/.
 MERGED from [com.android.support:customview:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/6dc733ceee0e4e97e0924307dabbf9d8/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/9e61fe6281666b5a5ab28a9d8aa96d86/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/a3bf3f11a14dd47fbb489ca18903e8d3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/62cbce5287ca9ddfbf9959c05fb6a9e0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b09e53cc40afe4568f4a47d5294ea1f7/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7b9385a221c900def3ff1667bf659b51/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/cb9d28ac4b0308ddacd07190e36da0f5/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/a5e25ad0ce13756e47f44d6c03022b6e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/b643422f06846e344166427f7f58e97b/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/5f351a6f725b29b05234b8a61e881015/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/2415f5e23754d20f09568a99c6f67175/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/a5e25ad0ce13756e47f44d6c03022b6e/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:documentfile:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/5d12218ba0de5e853bae871ebd314d52/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/92de8cf2ded6743995c4e7f7ee7a4019/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:print:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/dd4c6ec6bbdd134ff98784a7e3d109a4/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/dfee62d8a0206cb61f16d15cc6f787ea/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/2415f5e23754d20f09568a99c6f67175/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/141f0f99d3e76e2272b5223031b17ef8/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/d3ae01915479166b9f4f901114df512d/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/bc98230b57204007c29c7afe1dd06e32/AndroidManifest.xml:17:1-22:12
@@ -54,8 +56,12 @@ INJECTED from /Users/robinkopecky/Andr/Pizza/app/src/main/AndroidManifest.xml:2:
 		ADDED from /Users/robinkopecky/Andr/Pizza/app/src/main/AndroidManifest.xml:2:11-69
 application
 ADDED from /Users/robinkopecky/Andr/Pizza/app/src/main/AndroidManifest.xml:5:5-41:19
+MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/13ff07acdc361eea1da4b4c3b461e4b6/AndroidManifest.xml:11:5-20
+MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/13ff07acdc361eea1da4b4c3b461e4b6/AndroidManifest.xml:11:5-20
 MERGED from [com.android.support:design:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/720d31a53b62ae87702f8e86f1be25b2/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/720d31a53b62ae87702f8e86f1be25b2/AndroidManifest.xml:22:5-20
+MERGED from [com.github.AppIntro:AppIntro:4.2.3] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/AppIntro-4.2.3.aar/22c59a15ad32dc1dddd32ce64dacd059/AndroidManifest.xml:11:5-47
+MERGED from [com.github.AppIntro:AppIntro:4.2.3] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/AppIntro-4.2.3.aar/22c59a15ad32dc1dddd32ce64dacd059/AndroidManifest.xml:11:5-47
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/ba6f41a19084b11c70e34984e30f2387/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/ba6f41a19084b11c70e34984e30f2387/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-compat:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7b9385a221c900def3ff1667bf659b51/AndroidManifest.xml:22:5-94
@@ -111,7 +117,7 @@ ADDED from /Users/robinkopecky/Andr/Pizza/app/src/main/AndroidManifest.xml:25:9-
 activity#com.example.robinkopecky.pizza.MainActivity
 ADDED from /Users/robinkopecky/Andr/Pizza/app/src/main/AndroidManifest.xml:29:9-32:59
 	android:label
-		ADDED from /Users/robinkopecky/Andr/Pizza/app/src/main/AndroidManifest.xml:31:13-45
+		ADDED from /Users/robinkopecky/Andr/Pizza/app/src/main/AndroidManifest.xml:31:13-33
 	android:theme
 		ADDED from /Users/robinkopecky/Andr/Pizza/app/src/main/AndroidManifest.xml:32:13-56
 	android:name
@@ -136,8 +142,16 @@ uses-sdk
 INJECTED from /Users/robinkopecky/Andr/Pizza/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/robinkopecky/Andr/Pizza/app/src/main/AndroidManifest.xml
 INJECTED from /Users/robinkopecky/Andr/Pizza/app/src/main/AndroidManifest.xml
+MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/13ff07acdc361eea1da4b4c3b461e4b6/AndroidManifest.xml:7:5-9:41
+MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/13ff07acdc361eea1da4b4c3b461e4b6/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:design:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/720d31a53b62ae87702f8e86f1be25b2/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/720d31a53b62ae87702f8e86f1be25b2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/85032270f42c085cca487b14938bb3c7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/85032270f42c085cca487b14938bb3c7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/b643422f06846e344166427f7f58e97b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/b643422f06846e344166427f7f58e97b/AndroidManifest.xml:20:5-44
+MERGED from [com.github.AppIntro:AppIntro:4.2.3] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/AppIntro-4.2.3.aar/22c59a15ad32dc1dddd32ce64dacd059/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.AppIntro:AppIntro:4.2.3] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/AppIntro-4.2.3.aar/22c59a15ad32dc1dddd32ce64dacd059/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/78256525e6db230efb4825679d27229d/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/78256525e6db230efb4825679d27229d/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/ba6f41a19084b11c70e34984e30f2387/AndroidManifest.xml:5:5-7:41
@@ -146,18 +160,12 @@ MERGED from [com.android.support:support-fragment:28.0.0] /Users/robinkopecky/.g
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/4a82744ce8f9b614c96ff862a1bbed9a/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/537ac71d6845d6d3b1ffff434b2dee90/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/537ac71d6845d6d3b1ffff434b2dee90/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/85032270f42c085cca487b14938bb3c7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/85032270f42c085cca487b14938bb3c7/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/10ba8bd09c7fc797f26a27805579f2e3/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/10ba8bd09c7fc797f26a27805579f2e3/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/086e3d3940d4f2c2807a2a0ba09c43e0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/086e3d3940d4f2c2807a2a0ba09c43e0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b09e53cc40afe4568f4a47d5294ea1f7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b09e53cc40afe4568f4a47d5294ea1f7/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/e1600f12e5a7a0fb5ce887e2b6345a11/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/e1600f12e5a7a0fb5ce887e2b6345a11/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/62cbce5287ca9ddfbf9959c05fb6a9e0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/62cbce5287ca9ddfbf9959c05fb6a9e0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:viewpager:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/c389f00a529fbbf7f543e48e3a7b8acb/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:viewpager:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/c389f00a529fbbf7f543e48e3a7b8acb/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/bb504574d6ca53f8b31703cf630c1009/AndroidManifest.xml:20:5-44
@@ -172,16 +180,20 @@ MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/robinkopecky/
 MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/9e61fe6281666b5a5ab28a9d8aa96d86/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/a3bf3f11a14dd47fbb489ca18903e8d3/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/a3bf3f11a14dd47fbb489ca18903e8d3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/62cbce5287ca9ddfbf9959c05fb6a9e0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/62cbce5287ca9ddfbf9959c05fb6a9e0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b09e53cc40afe4568f4a47d5294ea1f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b09e53cc40afe4568f4a47d5294ea1f7/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7b9385a221c900def3ff1667bf659b51/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7b9385a221c900def3ff1667bf659b51/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/cb9d28ac4b0308ddacd07190e36da0f5/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/cb9d28ac4b0308ddacd07190e36da0f5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/a5e25ad0ce13756e47f44d6c03022b6e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/a5e25ad0ce13756e47f44d6c03022b6e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/b643422f06846e344166427f7f58e97b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/b643422f06846e344166427f7f58e97b/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/5f351a6f725b29b05234b8a61e881015/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/5f351a6f725b29b05234b8a61e881015/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/2415f5e23754d20f09568a99c6f67175/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/2415f5e23754d20f09568a99c6f67175/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/a5e25ad0ce13756e47f44d6c03022b6e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/a5e25ad0ce13756e47f44d6c03022b6e/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:documentfile:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/5d12218ba0de5e853bae871ebd314d52/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:documentfile:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/5d12218ba0de5e853bae871ebd314d52/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/92de8cf2ded6743995c4e7f7ee7a4019/AndroidManifest.xml:20:5-44
@@ -190,8 +202,6 @@ MERGED from [com.android.support:print:28.0.0] /Users/robinkopecky/.gradle/cache
 MERGED from [com.android.support:print:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/dd4c6ec6bbdd134ff98784a7e3d109a4/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/dfee62d8a0206cb61f16d15cc6f787ea/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/dfee62d8a0206cb61f16d15cc6f787ea/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/2415f5e23754d20f09568a99c6f67175/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/2415f5e23754d20f09568a99c6f67175/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/141f0f99d3e76e2272b5223031b17ef8/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/141f0f99d3e76e2272b5223031b17ef8/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/robinkopecky/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/d3ae01915479166b9f4f901114df512d/AndroidManifest.xml:20:5-44

@@ -29,6 +29,7 @@
         <enum name="invisible" value="1"/>
     </attr>
     <attr name="floatingActionButtonStyle"/>
+    <attr format="string" name="fontPath"/>
     <attr format="dimension" name="height"/>
     <attr format="reference" name="hideMotionSpec"/>
     <attr format="boolean" name="isLightTheme"/>
@@ -765,6 +766,15 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
+    <dimen name="appIntro2BottomBarHeight">80dp</dimen>
+    <dimen name="appIntroBottomBarHeight">64dp</dimen>
+    <dimen name="appIntroDefaultPaddingBottom">16dp</dimen>
+    <dimen name="appIntroDefaultPaddingBottomIntro1">80dp</dimen>
+    <dimen name="appIntroDefaultPaddingBottomIntro2">96dp</dimen>
+    <dimen name="appIntroDefaultPaddingLeft">16dp</dimen>
+    <dimen name="appIntroDefaultPaddingRight">16dp</dimen>
+    <dimen name="appIntroDefaultPaddingTop">40dp</dimen>
+    <dimen name="appIntroHeadingTextSize">28dp</dimen>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
@@ -912,6 +922,7 @@
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
+    <item name="calligraphy_tag_id" type="id"/>
     <item name="ghost_view" type="id"/>
     <item name="home" type="id"/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
@@ -1001,16 +1012,32 @@
     <string name="action_settings">Settings</string>
     <string name="add_button">Add Pizza</string>
     <string name="adding">Pizza added to bag</string>
+    <string name="app_intro_done_button">DONE</string>
+    <string name="app_intro_skip_button">SKIP</string>
     <string name="app_name">Pizza</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="buy">Buy</string>
     <string name="character_counter_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="define_appintro"/>
     <string name="fab_transformation_scrim_behavior" translatable="false">android.support.design.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">android.support.design.transformation.FabTransformationSheetBehavior</string>
+    <string name="help">Help</string>
+    <string name="helpText">This app is for ordering pizza. You can determine which pizza are your favorites. You can cancel this option later if your pizza stops tasting. After clicking on the pizza, you can check out more information. Your basket is always at hand.</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">android.support.design.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="lang_settings">Language Settings</string>
+    <string name="library_appintro_author">Paolo Rotolo</string>
+    <string name="library_appintro_authorWebsite">http://paolorotolo.github.io/</string>
+    <string name="library_appintro_classPath">com.github.paolorotolo.appintro</string>
+    <string name="library_appintro_isOpenSource">true</string>
+    <string name="library_appintro_libraryDescription">AppIntro is a library for making a cool intro in your Android apps.</string>
+    <string name="library_appintro_libraryName">AppIntro</string>
+    <string name="library_appintro_libraryVersion">3.2.0</string>
+    <string name="library_appintro_libraryWebsite">https://github.com/PaoloRotolo/AppIntro</string>
+    <string name="library_appintro_licenseId">apache_2_0</string>
+    <string name="library_appintro_repositoryLink">https://github.com/PaoloRotolo/AppIntro</string>
+    <string name="menu_title">Main dish</string>
     <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
     <string name="newPizza">New Pizza</string>
     <string name="noDescription">the description is not given</string>
@@ -1045,8 +1072,30 @@
     <item name="android:windowEnterAnimation">@anim/design_bottom_sheet_slide_in</item>
     <item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>
   </style>
+    <style name="AppIntroButtonStyleCompat" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="AppIntroDefaultHeading" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/appIntroHeadingTextSize</item>
+    </style>
+    <style name="AppIntroDefaultPadding">
+        <item name="android:paddingTop">@dimen/appIntroDefaultPaddingTop</item>
+        <item name="android:paddingLeft">@dimen/appIntroDefaultPaddingLeft</item>
+        <item name="android:paddingRight">@dimen/appIntroDefaultPaddingRight</item>
+        <item name="android:paddingBottom">@dimen/appIntroDefaultPaddingBottom</item>
+    </style>
+    <style name="AppIntroDefaultPadding.Intro1">
+        <item name="android:paddingBottom">@dimen/appIntroDefaultPaddingBottomIntro1</item>
+    </style>
+    <style name="AppIntroDefaultPadding.Intro2">
+        <item name="android:paddingBottom">@dimen/appIntroDefaultPaddingBottomIntro2</item>
+    </style>
+    <style name="AppIntroDefaultText" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        
+        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -2765,6 +2814,10 @@
     <item name="android:textColor">@color/mtrl_tabs_legacy_text_color_selector</item>
     <item name="textAllCaps">true</item>
   </style>
+    <style name="TextAppearance.FontPath" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/Italianno-Regular.ttf</item>
+    </style>
     <style name="TextAppearance.MaterialComponents.Body1" parent="TextAppearance.AppCompat.Body2">
     <item name="fontFamily">sans-serif</item>
     <item name="android:fontFamily">sans-serif</item>
@@ -3380,5 +3433,40 @@
   </style>
     <style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
         <item name="statusBarBackground">#000000</item>
+    </style>
+    <style name="style_header">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Caption</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    <style name="style_header2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/holo_orange_light</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Caption</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    <style name="style_recycler">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Subhead</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="style_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Subhead</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="style_text2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/holo_green_light</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Subhead</item>
+        <item name="android:layout_marginBottom">10dp</item>
     </style>
 </resources>
